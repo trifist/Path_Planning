@@ -88,9 +88,9 @@ void Raiboo::AStarImpl::planning() {
 
 void Raiboo::AStarImpl::printPath() {
     Point* point = this->endPoint;
-    std::cout << "(" << point->x << "," << point->y << ")--->";
+    std::cout << "(" << point->x << "," << point->y << ")";
     while((point = point->getParent()) != NULL) {
-        std::cout << "(" << point->x << "," << point->y << ")--->";
+        std::cout << "--->(" << point->x << "," << point->y << ")";
     }
     std::cout << std::endl;
 }
