@@ -10,5 +10,4 @@ SOURCES += \
 
 HEADERS += \
     point.h \
-    pathimpl.h \
     astarimpl.h

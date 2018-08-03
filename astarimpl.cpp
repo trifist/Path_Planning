@@ -19,6 +19,10 @@ void remove(std::list<Raiboo::Point*> &list, const Raiboo::Point* point) {
     }
 }
 
+Raiboo::AStarImpl::AStarImpl() {}
+
+Raiboo::AStarImpl::~AStarImpl() {}
+
 void Raiboo::AStarImpl::release() {
     for(int i=0;i<(this->row)*(this->col);i++) {
         delete this->map[i];

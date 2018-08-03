@@ -3,12 +3,11 @@
 
 #include<vector>
 #include<list>
-#include<pathimpl.h>
 #include<point.h>
 
 namespace Raiboo {
 
-class AStarImpl : public PathImpl
+class AStarImpl
 {
 private:
     Point** map;
@@ -30,6 +29,8 @@ private:
     void release();
 
 public:
+    AStarImpl();
+    ~AStarImpl();
     void loadMap(int* rawMap, int row, int col);
     void planning();
     void printPath();
